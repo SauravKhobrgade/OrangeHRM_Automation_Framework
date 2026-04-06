@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="2">
+    <test verbose="2" preserve-order="true" name="D:/OrangeHRM_Automation/src/test/java/testcase">
+        <classes>
+            <class name="testcase.DashboardTC">
+                <methods>
+                    <include name="verifyDashboardPage"/>
+                </methods>
+            </class>
+            <class name="testcase.LoginTC">
+                <methods>
+                    <include name="verifyLoginUrl"/>
+                    <include name="verifyLoginTitle"/>
+                    <include name="verifyvalidLogin"/>
+                    <include name="verifyInvalidLogin"/>
+                </methods>
+            </class>
+            <class name="testcase.PIMTC">
+                <methods>
+                    <include name="verifyPIMUrl"/>
+                    <include name="verifyPIMTitle"/>
+                    <include name="verifyPIMpageDisplayed"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
