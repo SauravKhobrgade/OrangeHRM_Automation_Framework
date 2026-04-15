@@ -22,8 +22,8 @@ public class BaseTest {
         cr=new ConfigReader();
         prop=cr.getPropObj();
         driverFactory=new DriverFactory();
-        driver=driverFactory.initDriver(cr.getProperty("browserName"));
-        driver.get(cr.getProperty("url"));
+        driver=driverFactory.initDriver(prop.getProperty("browserName"));
+        driver.get(prop.getProperty("url"));
     }
     
     public WebDriver getDriver(){

@@ -3,6 +3,13 @@
 <suite thread-count="2" parallel="tests" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="2" parallel="tests" name="D:/OrangeHRM_Automation/src/test/java/testcase(failed)">
     <classes>
+      <class name="testcase.LoginTC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyInvalidLogin"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcase.LoginTC -->
       <class name="testcase.PIMTC">
         <methods>
           <include name="tearDown"/>
@@ -11,13 +18,6 @@
           <include name="verifyPIMpageDisplayed"/>
         </methods>
       </class> <!-- testcase.PIMTC -->
-      <class name="testcase.LoginTC">
-        <methods>
-          <include name="tearDown"/>
-          <include name="verifyInvalidLogin"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- testcase.LoginTC -->
     </classes>
   </test> <!-- D:/OrangeHRM_Automation/src/test/java/testcase(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->
