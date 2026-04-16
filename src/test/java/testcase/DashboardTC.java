@@ -20,7 +20,6 @@ public class DashboardTC extends BaseTest {
         DashboardPage dashboardPage=new DashboardPage(getDriver());
         Assert.assertTrue(dashboardPage.isDashboardTextIsDisplayed());
 
-
     }
 
 }
